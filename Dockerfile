@@ -13,6 +13,6 @@ RUN npm i && npm cache clean --force
 
 COPY . ./
 
-EXPOSE 3000
+EXPOSE 5000
 
-CMD ["nodemon", "--exitcrash", "index.mjs"]
+CMD ["npm", "run", "dev"]
